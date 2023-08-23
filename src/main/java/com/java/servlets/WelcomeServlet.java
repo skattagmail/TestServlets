@@ -12,10 +12,10 @@ public class WelcomeServlet extends HttpServlet {
   
     public void doPost(HttpServletRequest request, HttpServletResponse response)  
         throws ServletException, IOException {  
-  
+	    System.out.println("Line1");
 	    response.setContentType("text/html");  
 	    PrintWriter out = response.getWriter();  
-	          
+	    System.out.println("Line2");	          
 	    String n = request.getParameter("userName");  
 	    out.print("Welcome "+n);  
     }  

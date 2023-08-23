@@ -19,15 +19,18 @@ public class LoginServlet extends HttpServlet {
 	          
 	    String n = request.getParameter("userName");  
 	    String p = request.getParameter("userPass");  
+	    System.out.println("Line1");
 
 	    if(p.equals("servlet")){  
 	        RequestDispatcher rd = request.getRequestDispatcher("servlet2");  
 	        rd.forward(request, response);  
+		    System.out.println("Line2");
 	    }  
 	    else{  
 	        out.print("Sorry UserName or Password Error!");  
 	        RequestDispatcher rd=request.getRequestDispatcher("/ReqDispatcher.html");  
 	        rd.include(request, response);  
+		    System.out.println("Line3");
         }  
     }  
 }  
