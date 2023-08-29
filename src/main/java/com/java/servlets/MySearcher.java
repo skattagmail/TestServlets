@@ -14,4 +14,7 @@ public class MySearcher extends HttpServlet {
         response.sendRedirect("https://www.google.com/?q="+name);  
  //       response.sendRedirect("ReqDispatcher.html");  
     }  
+    public void test() {
+    	
+    }
 }  

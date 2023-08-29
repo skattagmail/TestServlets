@@ -26,4 +26,7 @@ public class AddProgram extends HttpServlet{
 		PrintWriter out = res.getWriter();
 		out.println("Result is: "+k);
 	}
+	public void destroy() {
+		
+	}
 }

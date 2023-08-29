@@ -20,6 +20,9 @@ public class LoginServlet extends HttpServlet {
 	    String n = request.getParameter("userName");  
 	    String p = request.getParameter("userPass");  
 	    System.out.println("Line1");
+	    
+	    String n1 = request.getParameter("userName");  
+	    String p1 = request.getParameter("userPass");  
 
 	    if(p.equals("servlet")){  
 	        RequestDispatcher rd = request.getRequestDispatcher("servlet2");  
